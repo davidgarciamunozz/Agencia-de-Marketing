@@ -6,14 +6,13 @@ function Header () {
   return (
     <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+          <div className='mx-auto max-w-full xl:mx-20 xl:pt-32 xl:pb-26 lg:pt-40 lg:pb-48 pt-24 pb-12'>
             <div>
-              <div>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+              <div> 
+                <h1 className="text-5xl font-semibold tracking-tight pb-16 sm:text-6xl">
                   Agency for <span></span>
-                 
                   <Typewriter
-                    words={['Dreamers', 'Entrepreneurs', 'Creators', 'You!']}
+                    words={['Dreamers','Creators', 'You!']}
                     loop={0}
                     cursor
                     cursorStyle='_'
@@ -21,42 +20,38 @@ function Header () {
                     deleteSpeed={50}
                     delaySpeed={1000}       
                    />
-
-                 
-                
-
                 </h1>
-                <ul className=' flex gap-8 items-center justify-center py-10 '>
+                <ul className=' flex gap-8  py-10 '>
                     <li className='inline-flex transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'>
                       <Link to='/services/service1' className=' text-lg leading-8 text-gray-600 sm:text-center'>
-                        Service 1
+                        Web
                       </Link>
                     </li>
                     <li className='inline-flex transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'>
                         <Link to='/services/service2' className=' text-lg leading-8 text-gray-600 sm:text-center'>
-                            Service 2
+                            Apps
                         </Link>
                     </li>
                     <li className='inline-flex transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'>
                         <Link to='/services/service3' className=' text-lg leading-8 text-gray-600 sm:text-center'>
-                            Service 3
+                            Marketing
                         </Link>
                     </li>
                     <li className='inline-flex transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'>
                         <Link to='/services/service4' className=' text-lg leading-8 text-gray-600 sm:text-center'>
-                            Service 4
+                            Branding
                         </Link>
                     </li>
                     <li className='inline-flex transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'>
                         <Link to='/services/service5' className=' text-lg leading-8 text-gray-600 sm:text-center'>
-                            Service 5
+                            Design Company
                         </Link>
                     </li>
                 </ul>
-                <div className="mt-8 flex gap-x-4 sm:justify-center">
+                <div className="mt-8 flex gap-x-4">
                   <a
                     href="#"
-                    className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                    className="inline-block rounded-lg bg-orange-button px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-orange-button hover:bg-orange-button hover:ring-orange-button"
                   >
                     Get started
                     <span className="text-indigo-200" aria-hidden="true">
@@ -67,7 +62,7 @@ function Header () {
                     href="#"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
                   >
-                    Live demo
+                    About us
                     <span className="text-gray-400" aria-hidden="true">
                       &rarr;
                     </span>

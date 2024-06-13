@@ -7,6 +7,15 @@ module.exports = {
     extend: {
       colors:{
         "orange-button":"#FF561E",
+      },
+      transitionProperty: {
+        'object-fit': 'object-fit'
+      },
+      transitionTimingFunction: {
+        'ease-in-out': 'ease-in-out'
+      },
+      transitionDuration: {
+        '500': '500ms'
       }
     },
     boxShadow:{
@@ -17,7 +26,16 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.transition-handled': {
+          transition: '0.5s ease-in-out',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
   ],
 }
 
