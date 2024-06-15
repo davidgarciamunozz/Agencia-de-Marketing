@@ -16,6 +16,9 @@ module.exports = {
       },
       transitionDuration: {
         '500': '500ms'
+      },
+      height: {
+        '120': '30rem', 
       }
     },
     boxShadow:{
